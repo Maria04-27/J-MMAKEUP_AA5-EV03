@@ -1,0 +1,327 @@
+/*
+ * J&M MAKEUP - HOJA DE ESTILOS PRINCIPAL
+*/
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff5f8;
+    color: #333333;
+    min-height: 100vh;
+}
+
+/* NAVEGACIÓN */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #d53384 !important;
+}
+.navbar-nav .nav-link {
+    color: #555555;
+    font-weight: 500;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #d53384;
+}
+
+/* BOTONES */
+.btn-pink {
+    background-color: #d53384;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-pink:hover {
+    background-color: #b82c6e;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+.btn-outline-pink {
+    border: 2px solid #d53384;
+    color: #d53384;
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 8px 20px;
+    transition: 0.3s;
+}
+.btn-outline-pink:hover {
+    background-color: #d53384;
+    color: #ffffff;
+}
+
+/* BANNER PRINCIPAL */
+.hero {
+    background-color: #f8cbdc;
+    padding: 80px 20px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333333;
+}
+.hero p {
+    font-size: 18px;
+    color: #555555;
+    margin: 20px 0;
+}
+
+/* TÍTULOS DE SECCIÓN */
+.section-title {
+    text-align: center;
+    margin: 50px 0 30px;
+}
+.section-title h2 {
+    color: #d53384;
+    font-weight: bold;
+}
+.section-title p {
+    color: #666666;
+}
+
+/* TARJETAS DE PRODUCTOS */
+.product-card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.product-card .card-body {
+    padding: 20px;
+}
+.product-card h5 {
+    color: #333333;
+    font-weight: bold;
+}
+.product-description {
+    color: #666666;
+    font-size: 14px;
+}
+.product-price {
+    color: #d53384;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* CARRITO DE COMPRAS */
+.cart-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 40px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+.cart-item {
+    border-bottom: 1px solid #eeeeee;
+    padding: 20px 0;
+}
+.cart-item:last-child {
+    border-bottom: none;
+}
+.cart-total {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d53384;
+}
+
+/* FORMULARIOS */
+.form-container {
+    max-width: 500px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+    text-align: center;
+    color: #d53384;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    padding: 12px;
+}
+.form-control:focus {
+    border-color: #d53384;
+    box-shadow: 0 0 0 0.2rem rgba(213, 51, 132, 0.15);
+}
+
+/* MENSAJES DEL SISTEMA */
+.alert {
+    border-radius: 10px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #eeeeee;
+    padding: 30px 0;
+    margin-top: 60px;
+    text-align: center;
+}
+footer p {
+    color: #666666;
+    margin: 0;
+}
+footer a {
+    color: #d53384;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #b82c6e;
+}
+
+/* DISEÑO RESPONSIVO */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 20px;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .product-card img {
+        height: 200px;
+    }
+    .form-container {
+        margin: 30px 15px;
+        padding: 25px;
+    }
+}
+
+/* OFERTAS */
+.offer-card {
+    position: relative;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.offer-card .card-body {
+    padding: 25px;
+}
+.offer-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #d53384;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.old-price {
+    color: #888888;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+.offer-price {
+    color: #d53384;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* CONTACTO */
+.contact-card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 25px;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.contact-card h4 {
+    color: #d53384;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.contact-item i {
+    color: #d53384;
+    font-size: 24px;
+    margin-right: 15px;
+}
+.contact-item h6 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.contact-item p {
+    color: #666666;
+    margin: 0;
+}
+
+/* FORMULARIO DE CONTACTO */
+.contact-form {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.contact-form h4 {
+    color: #d53384;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* ICONOS DE OFERTAS */
+.offer-icon {
+    font-size: 70px;
+    color: #d53384;
+    margin-bottom: 15px;
+}
+
+/* RESPONSIVE PARA OFERTAS Y CONTACTO */
+@media (max-width: 768px) {
+    .offer-card {
+        margin-bottom: 20px;
+    }
+    .contact-card,
+    .contact-form {
+        margin-bottom: 20px;
+    }
+}

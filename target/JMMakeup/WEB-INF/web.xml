@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--JYM MAKEUP - CONFIGURACIÓN WEB
+    Proyecto: J&M Makeup
+    Evidencia: GA7-220501096-AA3-EV01
+    Tecnologías:
+    - Java 17
+    - Jakarta Servlet 6.0
+    - JSP
+    - JDBC
+    - MySQL
+    - Apache Tomcat
+-->
+<web-app
+        xmlns="https://jakarta.ee/xml/ns/jakartaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+        https://jakarta.ee/xml/ns/jakartaee
+        https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+        version="6.0">
+    <!-- NOMBRE DE LA APLICACIÓN -->
+    <display-name>J&amp;M Makeup</display-name>
+    <!-- PÁGINA PRINCIPAL -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <!-- CONFIGURACIÓN DE SESIÓN -->
+    <session-config>
+        <!-- Tiempo de sesión: 30 minutos -->
+        <session-timeout>30</session-timeout>
+    </session-config>
+</web-app>
